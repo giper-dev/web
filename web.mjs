@@ -5504,9 +5504,10 @@ var $;
     (function ($$) {
         class $hd_space_bar_link extends $.$hd_space_bar_link {
             current() {
-                const current = (this.$.$mol_state_arg.value('current') ?? '').replace(/^https?:\/\/|\/?\??#.*$/, '')
-                    || this.$.$mol_state_arg.href().replace(/^https?:\/\/|\/?\??#.*$/, '');
-                const uri = this.uri().replace(/^https?:\/\/|\/?\??#.*$/, '');
+                const omit = /^https?:\/\/|\/?\??(#.*)?$/;
+                const current = (this.$.$mol_state_arg.value('current') ?? '').replace(omit, '')
+                    || this.$.$mol_state_arg.href().replace(omit, '');
+                const uri = this.uri().replace(omit, '');
                 return uri === current;
             }
         }
