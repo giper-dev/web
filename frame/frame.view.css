@@ -1,0 +1,9 @@
+/* @keyframes hd_space_frame_show {
+	from {
+		opacity: 0;
+	}
+}
+
+[hd_space_frame] {
+	animation: 5s -1s ease-in hd_space_frame_show;
+} */

@@ -1,0 +1,8 @@
+include \/mol/offline/install
+
+deploy \/hd/space/logo/logo.svg
+deploy \/hd/search/logo/logo.svg
+deploy \/hd/linguist/logo/logo.svg
+deploy \/hd/player/logo/logo.svg
+deploy \/hd/balls/logo/logo.svg
+deploy \/hd/iq/logo/logo.svg
