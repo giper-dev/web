@@ -5639,7 +5639,7 @@ var $;
 		Search(){
 			const obj = new this.$.$hd_space_bar_link();
 			(obj.hint) = () => ((this.$.$mol_locale.text("$hd_space_bar_Search_hint")));
-			(obj.uri) = () => ("https://searc.hd4.ru/");
+			(obj.uri) = () => ("https://search.hd4.ru/");
 			(obj.icon) = () => ("hd/search/logo/logo.svg");
 			return obj;
 		}

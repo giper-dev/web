@@ -87,7 +87,7 @@ $hd_space_bar $mol_page
 	body <= apps /
 		<= Search $hd_space_bar_link
 			hint @ \Hyper Search
-			uri \https://searc.hd4.ru/
+			uri \https://search.hd4.ru/
 			- uri \http://localhost:9080/hd/search/app/-/test.html
 			icon \hd/search/logo/logo.svg
 		<= Linguist $hd_space_bar_link
