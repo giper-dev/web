@@ -88,27 +88,26 @@ $hd_space_bar $mol_page
 		<= Search $hd_space_bar_link
 			hint @ \Hyper Search
 			uri \https://search.hd4.ru/
-			- uri \http://localhost:9080/hd/search/app/-/test.html
 			icon \hd/search/logo/logo.svg
+		<= Bot $hd_space_bar_link
+			hint @ \Hyper Bot
+			uri \https://bot.hd4.ru/
+			icon \hd/bot/logo/logo.svg
 		<= Linguist $hd_space_bar_link
 			hint @ \Hyper Linguist
 			uri \https://linguist.hd4.ru/
-			- uri \http://localhost:9080/hd/linguist/app/-/test.html
 			icon \hd/linguist/logo/logo.svg
 		<= Player $hd_space_bar_link
 			hint @ \Hyper Player
 			uri \https://player.hd4.ru/
-			- uri \http://localhost:9080/hd/player/-/test.html
 			icon \hd/player/logo/logo.svg
 		<= Balls $hd_space_bar_link
 			hint @ \Hyper Balls
 			uri \https://balls.hd4.ru/
-			- uri \http://localhost:9080/hd/balls/-/test.html
 			icon \hd/balls/logo/logo.svg
 		<= IQ $hd_space_bar_link
 			hint @ \Hyper IQ
 			uri \https://iq.hd4.ru/
-			- uri \http://localhost:9080/hd/iq/-/test.html
 			icon \hd/iq/logo/logo.svg
 
 $hd_space_bar_link $mol_link

@@ -1728,10 +1728,26 @@ declare namespace $ {
 		,
 		ReturnType< $hd_space_bar_link['icon'] >
 	>
+	type $hd_space_bar_link__hint_hd_space_bar_19 = $mol_type_enforce<
+		string
+		,
+		ReturnType< $hd_space_bar_link['hint'] >
+	>
+	type $hd_space_bar_link__uri_hd_space_bar_20 = $mol_type_enforce<
+		string
+		,
+		ReturnType< $hd_space_bar_link['uri'] >
+	>
+	type $hd_space_bar_link__icon_hd_space_bar_21 = $mol_type_enforce<
+		string
+		,
+		ReturnType< $hd_space_bar_link['icon'] >
+	>
 	export class $hd_space_bar extends $mol_page {
 		Theme( ): $mol_theme_auto
 		Hyper( ): $hd_space_bar_link
 		Search( ): $hd_space_bar_link
+		Bot( ): $hd_space_bar_link
 		Linguist( ): $hd_space_bar_link
 		Player( ): $hd_space_bar_link
 		Balls( ): $hd_space_bar_link

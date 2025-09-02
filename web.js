@@ -5286,6 +5286,13 @@ var $;
 			(obj.icon) = () => ("hd/search/logo/logo.svg");
 			return obj;
 		}
+		Bot(){
+			const obj = new this.$.$hd_space_bar_link();
+			(obj.hint) = () => ((this.$.$mol_locale.text("$hd_space_bar_Bot_hint")));
+			(obj.uri) = () => ("https://bot.hd4.ru/");
+			(obj.icon) = () => ("hd/bot/logo/logo.svg");
+			return obj;
+		}
 		Linguist(){
 			const obj = new this.$.$hd_space_bar_link();
 			(obj.hint) = () => ((this.$.$mol_locale.text("$hd_space_bar_Linguist_hint")));
@@ -5317,6 +5324,7 @@ var $;
 		apps(){
 			return [
 				(this.Search()), 
+				(this.Bot()), 
 				(this.Linguist()), 
 				(this.Player()), 
 				(this.Balls()), 
@@ -5336,6 +5344,7 @@ var $;
 	($mol_mem(($.$hd_space_bar.prototype), "Theme"));
 	($mol_mem(($.$hd_space_bar.prototype), "Hyper"));
 	($mol_mem(($.$hd_space_bar.prototype), "Search"));
+	($mol_mem(($.$hd_space_bar.prototype), "Bot"));
 	($mol_mem(($.$hd_space_bar.prototype), "Linguist"));
 	($mol_mem(($.$hd_space_bar.prototype), "Player"));
 	($mol_mem(($.$hd_space_bar.prototype), "Balls"));
