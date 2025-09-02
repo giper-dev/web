@@ -1,0 +1,121 @@
+$mol_scroll $mol_view
+	scroll_top? 0
+	scroll_left? 0
+	attr *
+		^
+		tabindex <= tabindex -1
+	event *
+		^
+		scroll?event <=> event_scroll?event null
+
+$mol_page $mol_view
+	dom_name \article
+	attr *
+		^
+		tabIndex <= tabindex -1
+	sub /
+		<= Head $mol_view
+			minimal_height 64
+			dom_name \header
+			sub <= head /
+				<= Title $mol_view
+					dom_name \h1
+					sub <= title_content /
+						<= Logo null
+						<= title
+				<= Tools $mol_view
+					sub <= tools /$mol_view_content
+		<= Body $mol_scroll
+			scroll_top? => body_scroll_top?
+			sub <= body_content /
+				<= Body_content $mol_view
+					sub <= body /$mol_view
+		<= Foot $mol_view
+			dom_name \footer
+			sub <= foot /$mol_view
+
+$mol_theme_auto $mol_plugin
+	light \$mol_theme_light
+	attr * mol_theme <= theme <= dark \$mol_theme_dark
+
+$mol_link $mol_view
+	uri \
+	dom_name \a
+	uri_off \
+	uri_native null
+	external false
+	attr *
+		^
+		href <= uri_toggle \
+		title <= hint_safe <= hint \
+		target <= target \_self
+		download <= file_name \
+		mol_link_current <= current false
+		rel <= relation \
+	sub /$mol_view_content
+		<= title
+	arg *
+	event *
+		^
+		click?event <=> click?event <=> event_click?event null
+
+$mol_image $mol_view
+	dom_name \img
+	attr *any
+		^
+		src <= uri \
+		alt <= title
+		loading <= loading \lazy
+		decoding <= decoding \async
+		crossOrigin <= cors null
+		width <= natural_width 0
+		height <= natural_height 0
+	event *any
+		load? <=> load? null
+	minimal_width 16
+	minimal_height 16
+
+$hd_space_bar $mol_page
+	plugins /
+		<= Theme $mol_theme_auto
+	head /
+		<= Hyper $hd_space_bar_link
+			hint @ \Hyper Space
+			uri \https://space.hd4.ru/
+			- uri \http://localhost:9080/hd/space/bar/-/test.html
+			icon \hd/space/logo/logo.svg
+	body <= apps /
+		<= Search $hd_space_bar_link
+			hint @ \Hyper Search
+			uri \https://searc.hd4.ru/
+			- uri \http://localhost:9080/hd/search/app/-/test.html
+			icon \hd/search/logo/logo.svg
+		<= Linguist $hd_space_bar_link
+			hint @ \Hyper Linguist
+			uri \https://linguist.hd4.ru/
+			- uri \http://localhost:9080/hd/linguist/app/-/test.html
+			icon \hd/linguist/logo/logo.svg
+		<= Player $hd_space_bar_link
+			hint @ \Hyper Player
+			uri \https://player.hd4.ru/
+			- uri \http://localhost:9080/hd/player/-/test.html
+			icon \hd/player/logo/logo.svg
+		<= Balls $hd_space_bar_link
+			hint @ \Hyper Balls
+			uri \https://balls.hd4.ru/
+			- uri \http://localhost:9080/hd/balls/-/test.html
+			icon \hd/balls/logo/logo.svg
+		<= IQ $hd_space_bar_link
+			hint @ \Hyper IQ
+			uri \https://iq.hd4.ru/
+			- uri \http://localhost:9080/hd/iq/-/test.html
+			icon \hd/iq/logo/logo.svg
+
+$hd_space_bar_link $mol_link
+	target \_parent
+	uri_toggle <= uri
+	hint <= title
+	sub /
+		<= Icon $mol_image
+			uri <= icon \
+		<= Title $mol_view sub / <= title
