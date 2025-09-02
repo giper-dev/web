@@ -5,6 +5,10 @@ namespace $.$$ {
 		width: 'fit-content',
 		overflow: 'hidden',
 		
+		background: {
+			color: 'transparent',
+		},
+		
 		Head: {
 			display: 'grid',
 			justify: {
