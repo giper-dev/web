@@ -5627,9 +5627,12 @@ var $;
 			const obj = new this.$.$mol_theme_auto();
 			return obj;
 		}
-		Hyper(){
+		title(){
+			return (this.$.$mol_locale.text("$gd_web_bar_title"));
+		}
+		Giper(){
 			const obj = new this.$.$gd_web_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Hyper_hint")));
+			(obj.hint) = () => ((this.title()));
 			(obj.uri) = () => ("https://web.giper.dev/");
 			(obj.icon) = () => ("gd/web/logo/logo.svg");
 			return obj;
@@ -5690,14 +5693,14 @@ var $;
 			return [(this.Theme())];
 		}
 		head(){
-			return [(this.Hyper())];
+			return [(this.Giper())];
 		}
 		body(){
 			return (this.apps());
 		}
 	};
 	($mol_mem(($.$gd_web_bar.prototype), "Theme"));
-	($mol_mem(($.$gd_web_bar.prototype), "Hyper"));
+	($mol_mem(($.$gd_web_bar.prototype), "Giper"));
 	($mol_mem(($.$gd_web_bar.prototype), "Search"));
 	($mol_mem(($.$gd_web_bar.prototype), "Bot"));
 	($mol_mem(($.$gd_web_bar.prototype), "Linguist"));

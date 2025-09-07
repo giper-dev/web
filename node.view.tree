@@ -79,34 +79,34 @@ $gd_web_bar $mol_page
 	plugins /
 		<= Theme $mol_theme_auto
 	head /
-		<= Hyper $gd_web_bar_link
-			hint @ \Hyper Space
+		<= Giper $gd_web_bar_link
+			hint <= title @ \Giper Web
 			uri \https://web.giper.dev/
 			- uri \http://localhost:9080/gd/web/bar/-/test.html
 			icon \gd/web/logo/logo.svg
 	body <= apps /
 		<= Search $gd_web_bar_link
-			hint @ \Hyper Search
+			hint @ \Giper Search
 			uri \https://search.giper.dev/
 			icon \gd/search/logo/logo.svg
 		<= Bot $gd_web_bar_link
-			hint @ \Hyper Bot
+			hint @ \Giper Bot
 			uri \https://bot.giper.dev/
 			icon \gd/bot/logo/logo.svg
 		<= Linguist $gd_web_bar_link
-			hint @ \Hyper Linguist
+			hint @ \Giper Linguist
 			uri \https://linguist.giper.dev/
 			icon \gd/linguist/logo/logo.svg
 		<= Player $gd_web_bar_link
-			hint @ \Hyper Player
+			hint @ \Giper Player
 			uri \https://player.giper.dev/
 			icon \gd/player/logo/logo.svg
 		<= Balls $gd_web_bar_link
-			hint @ \Hyper Balls
+			hint @ \Giper Balls
 			uri \https://balls.giper.dev/
 			icon \gd/balls/logo/logo.svg
 		<= IQ $gd_web_bar_link
-			hint @ \Hyper IQ
+			hint @ \Giper IQ
 			uri \https://iq.giper.dev/
 			icon \gd/iq/logo/logo.svg
 

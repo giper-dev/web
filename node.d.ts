@@ -1642,7 +1642,7 @@ declare namespace $ {
 declare namespace $ {
 
 	type $gd_web_bar_link__hint_gd_web_bar_1 = $mol_type_enforce<
-		string
+		ReturnType< $gd_web_bar['title'] >
 		,
 		ReturnType< $gd_web_bar_link['hint'] >
 	>
@@ -1748,7 +1748,8 @@ declare namespace $ {
 	>
 	export class $gd_web_bar extends $mol_page {
 		Theme( ): $mol_theme_auto
-		Hyper( ): $gd_web_bar_link
+		title( ): string
+		Giper( ): $gd_web_bar_link
 		Search( ): $gd_web_bar_link
 		Bot( ): $gd_web_bar_link
 		Linguist( ): $gd_web_bar_link
