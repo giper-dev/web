@@ -1,2 +1,3 @@
 $hd_space_frame $mol_frame
 	uri \https://space.hd4.ru/#mol_lights={lights}/current={current}
+	- uri \http://localhost:9080/hd/space/bar/-/test.html#mol_lights={lights}/current={current}
