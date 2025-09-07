@@ -1,3 +1,3 @@
-# Giper Space
+# Giper Web
 
-> Space for Giper Dev apps
+> The Web of Giper apps
