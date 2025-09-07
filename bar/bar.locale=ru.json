@@ -1,9 +1,9 @@
 {
-	"$hd_space_bar_Hyper_hint": "Гипер Пространство",
-	"$hd_space_bar_Search_hint": "Гипер Поиск",
-	"$hd_space_bar_Bot_hint": "Гипер Бот",
-	"$hd_space_bar_Linguist_hint": "Гипер Лингвист",
-	"$hd_space_bar_Player_hint": "Гипер Плеер",
-	"$hd_space_bar_Balls_hint": "Гипер Шары",
-	"$hd_space_bar_IQ_hint": "Гипер IQ"
+	"$gd_web_bar_Hyper_hint": "Гипер Пространство",
+	"$gd_web_bar_Search_hint": "Гипер Поиск",
+	"$gd_web_bar_Bot_hint": "Гипер Бот",
+	"$gd_web_bar_Linguist_hint": "Гипер Лингвист",
+	"$gd_web_bar_Player_hint": "Гипер Плеер",
+	"$gd_web_bar_Balls_hint": "Гипер Шары",
+	"$gd_web_bar_IQ_hint": "Гипер IQ"
 }

@@ -1,5 +1,5 @@
 namespace $.$$ {
-	export class $hd_space_frame extends $.$hd_space_frame {
+	export class $gd_web_frame extends $.$gd_web_frame {
 		
 		@ $mol_mem
 		uri() {

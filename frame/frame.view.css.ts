@@ -1,6 +1,6 @@
 namespace $.$$ {
 	
-	$mol_style_define( $hd_space_frame, {
+	$mol_style_define( $gd_web_frame, {
 		
 		flex: {
 			basis: '4rem',

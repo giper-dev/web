@@ -1,39 +1,39 @@
-$hd_space_bar $mol_page
+$gd_web_bar $mol_page
 	plugins /
 		<= Theme $mol_theme_auto
 	head /
-		<= Hyper $hd_space_bar_link
+		<= Hyper $gd_web_bar_link
 			hint @ \Hyper Space
-			uri \https://space.hd4.ru/
-			- uri \http://localhost:9080/hd/space/bar/-/test.html
-			icon \hd/space/logo/logo.svg
+			uri \https://web.giper.dev/
+			- uri \http://localhost:9080/gd/web/bar/-/test.html
+			icon \gd/web/logo/logo.svg
 	body <= apps /
-		<= Search $hd_space_bar_link
+		<= Search $gd_web_bar_link
 			hint @ \Hyper Search
-			uri \https://search.hd4.ru/
-			icon \hd/search/logo/logo.svg
-		<= Bot $hd_space_bar_link
+			uri \https://search.giper.dev/
+			icon \gd/search/logo/logo.svg
+		<= Bot $gd_web_bar_link
 			hint @ \Hyper Bot
-			uri \https://bot.hd4.ru/
-			icon \hd/bot/logo/logo.svg
-		<= Linguist $hd_space_bar_link
+			uri \https://bot.giper.dev/
+			icon \gd/bot/logo/logo.svg
+		<= Linguist $gd_web_bar_link
 			hint @ \Hyper Linguist
-			uri \https://linguist.hd4.ru/
-			icon \hd/linguist/logo/logo.svg
-		<= Player $hd_space_bar_link
+			uri \https://linguist.giper.dev/
+			icon \gd/linguist/logo/logo.svg
+		<= Player $gd_web_bar_link
 			hint @ \Hyper Player
-			uri \https://player.hd4.ru/
-			icon \hd/player/logo/logo.svg
-		<= Balls $hd_space_bar_link
+			uri \https://player.giper.dev/
+			icon \gd/player/logo/logo.svg
+		<= Balls $gd_web_bar_link
 			hint @ \Hyper Balls
-			uri \https://balls.hd4.ru/
-			icon \hd/balls/logo/logo.svg
-		<= IQ $hd_space_bar_link
+			uri \https://balls.giper.dev/
+			icon \gd/balls/logo/logo.svg
+		<= IQ $gd_web_bar_link
 			hint @ \Hyper IQ
-			uri \https://iq.hd4.ru/
-			icon \hd/iq/logo/logo.svg
+			uri \https://iq.giper.dev/
+			icon \gd/iq/logo/logo.svg
 
-$hd_space_bar_link $mol_link
+$gd_web_bar_link $mol_link
 	target \_parent
 	uri_toggle <= uri
 	hint <= title

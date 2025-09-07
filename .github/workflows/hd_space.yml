@@ -1,4 +1,4 @@
-name: $hd_space
+name: $gd_web
 
 # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs#defining-access-for-the-github_token-permissions
 permissions: write-all
@@ -20,10 +20,10 @@ jobs:
     
     - uses: hyoo-ru/mam_build@master2
       with:
-        package: 'hd/space'
+        package: 'gd/web'
         modules: 'bar'
     
     - uses: hyoo-ru/gh-deploy@v4.4.1
       if: github.ref == 'refs/heads/master'
       with:
-        folder: 'hd/space/bar/-'
+        folder: 'gd/web/bar/-'

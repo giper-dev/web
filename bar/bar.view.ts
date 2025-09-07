@@ -1,5 +1,5 @@
 namespace $.$$ {
-	export class $hd_space_bar_link extends $.$hd_space_bar_link {
+	export class $gd_web_bar_link extends $.$gd_web_bar_link {
 		
 		@ $mol_mem
 		current() {
