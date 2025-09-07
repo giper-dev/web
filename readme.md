@@ -1,3 +1,3 @@
-# Hyper Space
+# Giper Space
 
-> Space for Hyper Dev apps
+> Space for Giper Dev apps
