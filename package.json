@@ -1,5 +1,5 @@
 {
-  "name": "hd_space_bar",
+  "name": "gd_web_bar",
   "version": "0.0.1",
   "exports": {
     "node": {
@@ -15,9 +15,9 @@
   "browser": "./web.js",
   "types": "./web.d.ts",
   "keywords": [
-    "$hd_space_bar",
-    "$hd_space",
-    "$hd",
+    "$gd_web_bar",
+    "$gd_web",
+    "$gd",
     "$mol_page",
     "$mol",
     "$mol_view_view",

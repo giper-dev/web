@@ -5631,58 +5631,58 @@ var $;
 })($ || ($ = {}));
 
 ;
-	($.$hd_space_bar) = class $hd_space_bar extends ($.$mol_page) {
+	($.$gd_web_bar) = class $gd_web_bar extends ($.$mol_page) {
 		Theme(){
 			const obj = new this.$.$mol_theme_auto();
 			return obj;
 		}
 		Hyper(){
-			const obj = new this.$.$hd_space_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$hd_space_bar_Hyper_hint")));
-			(obj.uri) = () => ("https://space.hd4.ru/");
-			(obj.icon) = () => ("hd/space/logo/logo.svg");
+			const obj = new this.$.$gd_web_bar_link();
+			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Hyper_hint")));
+			(obj.uri) = () => ("https://web.giper.dev/");
+			(obj.icon) = () => ("gd/web/logo/logo.svg");
 			return obj;
 		}
 		Search(){
-			const obj = new this.$.$hd_space_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$hd_space_bar_Search_hint")));
-			(obj.uri) = () => ("https://search.hd4.ru/");
-			(obj.icon) = () => ("hd/search/logo/logo.svg");
+			const obj = new this.$.$gd_web_bar_link();
+			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Search_hint")));
+			(obj.uri) = () => ("https://search.giper.dev/");
+			(obj.icon) = () => ("gd/search/logo/logo.svg");
 			return obj;
 		}
 		Bot(){
-			const obj = new this.$.$hd_space_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$hd_space_bar_Bot_hint")));
-			(obj.uri) = () => ("https://bot.hd4.ru/");
-			(obj.icon) = () => ("hd/bot/logo/logo.svg");
+			const obj = new this.$.$gd_web_bar_link();
+			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Bot_hint")));
+			(obj.uri) = () => ("https://bot.giper.dev/");
+			(obj.icon) = () => ("gd/bot/logo/logo.svg");
 			return obj;
 		}
 		Linguist(){
-			const obj = new this.$.$hd_space_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$hd_space_bar_Linguist_hint")));
-			(obj.uri) = () => ("https://linguist.hd4.ru/");
-			(obj.icon) = () => ("hd/linguist/logo/logo.svg");
+			const obj = new this.$.$gd_web_bar_link();
+			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Linguist_hint")));
+			(obj.uri) = () => ("https://linguist.giper.dev/");
+			(obj.icon) = () => ("gd/linguist/logo/logo.svg");
 			return obj;
 		}
 		Player(){
-			const obj = new this.$.$hd_space_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$hd_space_bar_Player_hint")));
-			(obj.uri) = () => ("https://player.hd4.ru/");
-			(obj.icon) = () => ("hd/player/logo/logo.svg");
+			const obj = new this.$.$gd_web_bar_link();
+			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Player_hint")));
+			(obj.uri) = () => ("https://player.giper.dev/");
+			(obj.icon) = () => ("gd/player/logo/logo.svg");
 			return obj;
 		}
 		Balls(){
-			const obj = new this.$.$hd_space_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$hd_space_bar_Balls_hint")));
-			(obj.uri) = () => ("https://balls.hd4.ru/");
-			(obj.icon) = () => ("hd/balls/logo/logo.svg");
+			const obj = new this.$.$gd_web_bar_link();
+			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Balls_hint")));
+			(obj.uri) = () => ("https://balls.giper.dev/");
+			(obj.icon) = () => ("gd/balls/logo/logo.svg");
 			return obj;
 		}
 		IQ(){
-			const obj = new this.$.$hd_space_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$hd_space_bar_IQ_hint")));
-			(obj.uri) = () => ("https://iq.hd4.ru/");
-			(obj.icon) = () => ("hd/iq/logo/logo.svg");
+			const obj = new this.$.$gd_web_bar_link();
+			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_IQ_hint")));
+			(obj.uri) = () => ("https://iq.giper.dev/");
+			(obj.icon) = () => ("gd/iq/logo/logo.svg");
 			return obj;
 		}
 		apps(){
@@ -5705,15 +5705,15 @@ var $;
 			return (this.apps());
 		}
 	};
-	($mol_mem(($.$hd_space_bar.prototype), "Theme"));
-	($mol_mem(($.$hd_space_bar.prototype), "Hyper"));
-	($mol_mem(($.$hd_space_bar.prototype), "Search"));
-	($mol_mem(($.$hd_space_bar.prototype), "Bot"));
-	($mol_mem(($.$hd_space_bar.prototype), "Linguist"));
-	($mol_mem(($.$hd_space_bar.prototype), "Player"));
-	($mol_mem(($.$hd_space_bar.prototype), "Balls"));
-	($mol_mem(($.$hd_space_bar.prototype), "IQ"));
-	($.$hd_space_bar_link) = class $hd_space_bar_link extends ($.$mol_link) {
+	($mol_mem(($.$gd_web_bar.prototype), "Theme"));
+	($mol_mem(($.$gd_web_bar.prototype), "Hyper"));
+	($mol_mem(($.$gd_web_bar.prototype), "Search"));
+	($mol_mem(($.$gd_web_bar.prototype), "Bot"));
+	($mol_mem(($.$gd_web_bar.prototype), "Linguist"));
+	($mol_mem(($.$gd_web_bar.prototype), "Player"));
+	($mol_mem(($.$gd_web_bar.prototype), "Balls"));
+	($mol_mem(($.$gd_web_bar.prototype), "IQ"));
+	($.$gd_web_bar_link) = class $gd_web_bar_link extends ($.$mol_link) {
 		icon(){
 			return "";
 		}
@@ -5740,8 +5740,8 @@ var $;
 			return [(this.Icon()), (this.Title())];
 		}
 	};
-	($mol_mem(($.$hd_space_bar_link.prototype), "Icon"));
-	($mol_mem(($.$hd_space_bar_link.prototype), "Title"));
+	($mol_mem(($.$gd_web_bar_link.prototype), "Icon"));
+	($mol_mem(($.$gd_web_bar_link.prototype), "Title"));
 
 
 ;
@@ -5773,7 +5773,7 @@ var $;
 (function ($) {
     var $$;
     (function ($$) {
-        class $hd_space_bar_link extends $.$hd_space_bar_link {
+        class $gd_web_bar_link extends $.$gd_web_bar_link {
             current() {
                 const omit = /^https?:\/\/|\/?\??(#.*)?$/g;
                 const current = (this.$.$mol_state_arg.value('current') ?? '').replace(omit, '')
@@ -5784,8 +5784,8 @@ var $;
         }
         __decorate([
             $mol_mem
-        ], $hd_space_bar_link.prototype, "current", null);
-        $$.$hd_space_bar_link = $hd_space_bar_link;
+        ], $gd_web_bar_link.prototype, "current", null);
+        $$.$gd_web_bar_link = $gd_web_bar_link;
     })($$ = $.$$ || ($.$$ = {}));
 })($ || ($ = {}));
 
@@ -5795,7 +5795,7 @@ var $;
 (function ($) {
     var $$;
     (function ($$) {
-        $mol_style_define($hd_space_bar, {
+        $mol_style_define($gd_web_bar, {
             width: 'fit-content',
             overflow: 'hidden',
             background: {
@@ -5813,7 +5813,7 @@ var $;
                 }
             },
         });
-        $mol_style_define($hd_space_bar_link, {
+        $mol_style_define($gd_web_bar_link, {
             padding: 0,
             gap: 0,
             Icon: {
