@@ -5304,11 +5304,11 @@ var $;
 			(obj.icon) = () => ("gd/bot/logo/logo.svg");
 			return obj;
 		}
-		Linguist(){
+		Lingua(){
 			const obj = new this.$.$gd_web_bar_link();
-			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Linguist_title")));
-			(obj.uri) = () => ("https://linguist.giper.dev/");
-			(obj.icon) = () => ("gd/linguist/logo/logo.svg");
+			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Lingua_title")));
+			(obj.uri) = () => ("https://lingua.giper.dev/");
+			(obj.icon) = () => ("gd/lingua/logo/logo.svg");
 			return obj;
 		}
 		Player(){
@@ -5336,7 +5336,7 @@ var $;
 			return [
 				(this.Search()), 
 				(this.Bot()), 
-				(this.Linguist()), 
+				(this.Lingua()), 
 				(this.Player()), 
 				(this.Balls()), 
 				(this.IQ())
@@ -5356,7 +5356,7 @@ var $;
 	($mol_mem(($.$gd_web_bar.prototype), "Giper"));
 	($mol_mem(($.$gd_web_bar.prototype), "Search"));
 	($mol_mem(($.$gd_web_bar.prototype), "Bot"));
-	($mol_mem(($.$gd_web_bar.prototype), "Linguist"));
+	($mol_mem(($.$gd_web_bar.prototype), "Lingua"));
 	($mol_mem(($.$gd_web_bar.prototype), "Player"));
 	($mol_mem(($.$gd_web_bar.prototype), "Balls"));
 	($mol_mem(($.$gd_web_bar.prototype), "IQ"));

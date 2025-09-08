@@ -1752,7 +1752,7 @@ declare namespace $ {
 		Giper( ): $gd_web_bar_link
 		Search( ): $gd_web_bar_link
 		Bot( ): $gd_web_bar_link
-		Linguist( ): $gd_web_bar_link
+		Lingua( ): $gd_web_bar_link
 		Player( ): $gd_web_bar_link
 		Balls( ): $gd_web_bar_link
 		IQ( ): $gd_web_bar_link
