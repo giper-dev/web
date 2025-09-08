@@ -1635,10 +1635,10 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $gd_web_bar_link__hint_gd_web_bar_1 = $mol_type_enforce<
+	type $gd_web_bar_link__title_gd_web_bar_1 = $mol_type_enforce<
 		ReturnType< $gd_web_bar['title'] >
 		,
-		ReturnType< $gd_web_bar_link['hint'] >
+		ReturnType< $gd_web_bar_link['title'] >
 	>
 	type $gd_web_bar_link__uri_gd_web_bar_2 = $mol_type_enforce<
 		string
@@ -1650,10 +1650,10 @@ declare namespace $ {
 		,
 		ReturnType< $gd_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__hint_gd_web_bar_4 = $mol_type_enforce<
+	type $gd_web_bar_link__title_gd_web_bar_4 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['hint'] >
+		ReturnType< $gd_web_bar_link['title'] >
 	>
 	type $gd_web_bar_link__uri_gd_web_bar_5 = $mol_type_enforce<
 		string
@@ -1665,10 +1665,10 @@ declare namespace $ {
 		,
 		ReturnType< $gd_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__hint_gd_web_bar_7 = $mol_type_enforce<
+	type $gd_web_bar_link__title_gd_web_bar_7 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['hint'] >
+		ReturnType< $gd_web_bar_link['title'] >
 	>
 	type $gd_web_bar_link__uri_gd_web_bar_8 = $mol_type_enforce<
 		string
@@ -1680,10 +1680,10 @@ declare namespace $ {
 		,
 		ReturnType< $gd_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__hint_gd_web_bar_10 = $mol_type_enforce<
+	type $gd_web_bar_link__title_gd_web_bar_10 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['hint'] >
+		ReturnType< $gd_web_bar_link['title'] >
 	>
 	type $gd_web_bar_link__uri_gd_web_bar_11 = $mol_type_enforce<
 		string
@@ -1695,10 +1695,10 @@ declare namespace $ {
 		,
 		ReturnType< $gd_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__hint_gd_web_bar_13 = $mol_type_enforce<
+	type $gd_web_bar_link__title_gd_web_bar_13 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['hint'] >
+		ReturnType< $gd_web_bar_link['title'] >
 	>
 	type $gd_web_bar_link__uri_gd_web_bar_14 = $mol_type_enforce<
 		string
@@ -1710,10 +1710,10 @@ declare namespace $ {
 		,
 		ReturnType< $gd_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__hint_gd_web_bar_16 = $mol_type_enforce<
+	type $gd_web_bar_link__title_gd_web_bar_16 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['hint'] >
+		ReturnType< $gd_web_bar_link['title'] >
 	>
 	type $gd_web_bar_link__uri_gd_web_bar_17 = $mol_type_enforce<
 		string
@@ -1725,10 +1725,10 @@ declare namespace $ {
 		,
 		ReturnType< $gd_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__hint_gd_web_bar_19 = $mol_type_enforce<
+	type $gd_web_bar_link__title_gd_web_bar_19 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['hint'] >
+		ReturnType< $gd_web_bar_link['title'] >
 	>
 	type $gd_web_bar_link__uri_gd_web_bar_20 = $mol_type_enforce<
 		string
@@ -1761,7 +1761,12 @@ declare namespace $ {
 		,
 		ReturnType< $mol_image['uri'] >
 	>
-	type $mol_view__sub_gd_web_bar_link_2 = $mol_type_enforce<
+	type $mol_image__hint_gd_web_bar_link_2 = $mol_type_enforce<
+		ReturnType< $gd_web_bar_link['title'] >
+		,
+		ReturnType< $mol_image['hint'] >
+	>
+	type $mol_view__sub_gd_web_bar_link_3 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
@@ -1772,7 +1777,6 @@ declare namespace $ {
 		Title( ): $mol_view
 		target( ): string
 		uri_toggle( ): ReturnType< $gd_web_bar_link['uri'] >
-		hint( ): ReturnType< $gd_web_bar_link['title'] >
 		sub( ): readonly(any)[]
 	}
 	

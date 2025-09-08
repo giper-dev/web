@@ -1,9 +1,9 @@
 {
-	"$gd_web_bar_Balls_hint": "Giper Balls",
-	"$gd_web_bar_Bot_hint": "Giper Bot",
-	"$gd_web_bar_IQ_hint": "Giper IQ",
-	"$gd_web_bar_Linguist_hint": "Giper Linguist",
-	"$gd_web_bar_Player_hint": "Giper Player",
-	"$gd_web_bar_Search_hint": "Giper Search",
+	"$gd_web_bar_Balls_title": "Balls",
+	"$gd_web_bar_Bot_title": "Bot",
+	"$gd_web_bar_IQ_title": "IQ",
+	"$gd_web_bar_Linguist_title": "Linguist",
+	"$gd_web_bar_Player_title": "Player",
+	"$gd_web_bar_Search_title": "Search",
 	"$gd_web_bar_title": "Giper Web"
 }

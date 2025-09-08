@@ -5554,6 +5554,7 @@ var $;
 			return {
 				...(super.attr()), 
 				"src": (this.uri()), 
+				"hint": (this.hint()), 
 				"alt": (this.title()), 
 				"loading": (this.loading()), 
 				"decoding": (this.decoding()), 
@@ -5632,49 +5633,49 @@ var $;
 		}
 		Giper(){
 			const obj = new this.$.$gd_web_bar_link();
-			(obj.hint) = () => ((this.title()));
+			(obj.title) = () => ((this.title()));
 			(obj.uri) = () => ("https://web.giper.dev/");
 			(obj.icon) = () => ("gd/web/logo/logo.svg");
 			return obj;
 		}
 		Search(){
 			const obj = new this.$.$gd_web_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Search_hint")));
+			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Search_title")));
 			(obj.uri) = () => ("https://search.giper.dev/");
 			(obj.icon) = () => ("gd/search/logo/logo.svg");
 			return obj;
 		}
 		Bot(){
 			const obj = new this.$.$gd_web_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Bot_hint")));
+			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Bot_title")));
 			(obj.uri) = () => ("https://bot.giper.dev/");
 			(obj.icon) = () => ("gd/bot/logo/logo.svg");
 			return obj;
 		}
 		Linguist(){
 			const obj = new this.$.$gd_web_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Linguist_hint")));
+			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Linguist_title")));
 			(obj.uri) = () => ("https://linguist.giper.dev/");
 			(obj.icon) = () => ("gd/linguist/logo/logo.svg");
 			return obj;
 		}
 		Player(){
 			const obj = new this.$.$gd_web_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Player_hint")));
+			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Player_title")));
 			(obj.uri) = () => ("https://player.giper.dev/");
 			(obj.icon) = () => ("gd/player/logo/logo.svg");
 			return obj;
 		}
 		Balls(){
 			const obj = new this.$.$gd_web_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_Balls_hint")));
+			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Balls_title")));
 			(obj.uri) = () => ("https://balls.giper.dev/");
 			(obj.icon) = () => ("gd/balls/logo/logo.svg");
 			return obj;
 		}
 		IQ(){
 			const obj = new this.$.$gd_web_bar_link();
-			(obj.hint) = () => ((this.$.$mol_locale.text("$gd_web_bar_IQ_hint")));
+			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_IQ_title")));
 			(obj.uri) = () => ("https://iq.giper.dev/");
 			(obj.icon) = () => ("gd/iq/logo/logo.svg");
 			return obj;
@@ -5714,6 +5715,7 @@ var $;
 		Icon(){
 			const obj = new this.$.$mol_image();
 			(obj.uri) = () => ((this.icon()));
+			(obj.hint) = () => ((this.title()));
 			return obj;
 		}
 		Title(){
@@ -5726,9 +5728,6 @@ var $;
 		}
 		uri_toggle(){
 			return (this.uri());
-		}
-		hint(){
-			return (this.title());
 		}
 		sub(){
 			return [(this.Icon()), (this.Title())];

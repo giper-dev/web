@@ -1,9 +1,9 @@
 {
-	"$gd_web_bar_Balls_hint": "Гипер Шары",
-	"$gd_web_bar_Bot_hint": "Гипер Бот",
-	"$gd_web_bar_IQ_hint": "Гипер IQ",
-	"$gd_web_bar_Linguist_hint": "Гипер Лингвист",
-	"$gd_web_bar_Player_hint": "Гипер Плеер",
-	"$gd_web_bar_Search_hint": "Гипер Поиск",
+	"$gd_web_bar_Balls_title": "Шары",
+	"$gd_web_bar_Bot_title": "Бот",
+	"$gd_web_bar_IQ_title": "IQ",
+	"$gd_web_bar_Linguist_title": "Лингвист",
+	"$gd_web_bar_Player_title": "Плеер",
+	"$gd_web_bar_Search_title": "Поиск",
 	"$gd_web_bar_title": "Гипер Веб"
 }
