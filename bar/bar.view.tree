@@ -3,41 +3,41 @@ $gd_web_bar $mol_page
 		<= Theme $mol_theme_auto
 	head /
 		<= Giper $gd_web_bar_link
-			hint <= title @ \Giper Web
+			title <= title @ \Giper Web
 			uri \https://web.giper.dev/
 			- uri \http://localhost:9080/gd/web/bar/-/test.html
 			icon \gd/web/logo/logo.svg
 	body <= apps /
 		<= Search $gd_web_bar_link
-			hint @ \Giper Search
+			title @ \Search
 			uri \https://search.giper.dev/
 			icon \gd/search/logo/logo.svg
 		<= Bot $gd_web_bar_link
-			hint @ \Giper Bot
+			title @ \Bot
 			uri \https://bot.giper.dev/
 			icon \gd/bot/logo/logo.svg
 		<= Linguist $gd_web_bar_link
-			hint @ \Giper Linguist
+			title @ \Linguist
 			uri \https://linguist.giper.dev/
 			icon \gd/linguist/logo/logo.svg
 		<= Player $gd_web_bar_link
-			hint @ \Giper Player
+			title @ \Player
 			uri \https://player.giper.dev/
 			icon \gd/player/logo/logo.svg
 		<= Balls $gd_web_bar_link
-			hint @ \Giper Balls
+			title @ \Balls
 			uri \https://balls.giper.dev/
 			icon \gd/balls/logo/logo.svg
 		<= IQ $gd_web_bar_link
-			hint @ \Giper IQ
+			title @ \IQ
 			uri \https://iq.giper.dev/
 			icon \gd/iq/logo/logo.svg
 
 $gd_web_bar_link $mol_link
 	target \_parent
 	uri_toggle <= uri
-	hint <= title
 	sub /
 		<= Icon $mol_image
 			uri <= icon \
+			hint <= title
 		<= Title $mol_view sub / <= title
