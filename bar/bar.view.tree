@@ -16,10 +16,10 @@ $gd_web_bar $mol_page
 			title @ \Bot
 			uri \https://bot.giper.dev/
 			icon \gd/bot/logo/logo.svg
-		<= Linguist $gd_web_bar_link
-			title @ \Linguist
-			uri \https://linguist.giper.dev/
-			icon \gd/linguist/logo/logo.svg
+		<= Lingua $gd_web_bar_link
+			title @ \Lingua
+			uri \https://lingua.giper.dev/
+			icon \gd/lingua/logo/logo.svg
 		<= Player $gd_web_bar_link
 			title @ \Player
 			uri \https://player.giper.dev/

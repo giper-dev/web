@@ -3,7 +3,7 @@ include \/mol/offline/install
 deploy \/gd/web/logo/logo.svg
 deploy \/gd/search/logo/logo.svg
 deploy \/gd/bot/logo/logo.svg
-deploy \/gd/linguist/logo/logo.svg
+deploy \/gd/lingua/logo/logo.svg
 deploy \/gd/player/logo/logo.svg
 deploy \/gd/balls/logo/logo.svg
 deploy \/gd/iq/logo/logo.svg
