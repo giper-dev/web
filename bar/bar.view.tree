@@ -32,3 +32,7 @@ $gd_web_bar $mol_page
 			title @ \IQ
 			uri \https://iq.giper.dev/
 			icon \gd/iq/logo/logo.svg
+	foot /
+		<= Sources $mol_link_source
+			uri \https://github.com/giper-dev/web
+
