@@ -14,7 +14,7 @@ $gd_web_bar $mol_page
 			icon \gd/search/logo/logo.svg
 		<= Bot $gd_web_bar_link
 			title @ \Bot
-			uri \https://bot.giper.dev/
+			uri \https://bot.giper.dev/#!prompt={query}
 			icon \gd/bot/logo/logo.svg
 		<= Lingua $gd_web_bar_link
 			title @ \Lingua
@@ -32,12 +32,3 @@ $gd_web_bar $mol_page
 			title @ \IQ
 			uri \https://iq.giper.dev/
 			icon \gd/iq/logo/logo.svg
-
-$gd_web_bar_link $mol_link
-	target \_parent
-	uri_toggle <= uri
-	sub /
-		<= Icon $mol_image
-			uri <= icon \
-			hint <= title
-		<= Title $mol_view sub / <= title
