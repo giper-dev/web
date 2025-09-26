@@ -5945,14 +5945,14 @@ var $;
 		Lingua(){
 			const obj = new this.$.$gd_web_bar_link();
 			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Lingua_title")));
-			(obj.uri) = () => ("https://lingua.giper.dev/");
+			(obj.uri) = () => ("https://lingua.giper.dev/#!native_text={query}");
 			(obj.icon) = () => ("gd/lingua/logo/logo.svg");
 			return obj;
 		}
 		Player(){
 			const obj = new this.$.$gd_web_bar_link();
 			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Player_title")));
-			(obj.uri) = () => ("https://player.giper.dev/");
+			(obj.uri) = () => ("https://player.giper.dev/#!search={query}");
 			(obj.icon) = () => ("gd/player/logo/logo.svg");
 			return obj;
 		}
