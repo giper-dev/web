@@ -5,5 +5,6 @@
 	"$gd_web_bar_Lingua_title": "Лингвист",
 	"$gd_web_bar_Player_title": "Плеер",
 	"$gd_web_bar_Search_title": "Поиск",
-	"$gd_web_bar_title": "Гипер Веб"
+	"$gd_web_bar_title": "Гипер Веб",
+	"$mol_link_source_hint": "Исходные коды"
 }

@@ -1633,6 +1633,152 @@ declare namespace $ {
 }
 
 declare namespace $ {
+
+	type $mol_image__uri_gd_web_bar_link_1 = $mol_type_enforce<
+		ReturnType< $gd_web_bar_link['icon'] >
+		,
+		ReturnType< $mol_image['uri'] >
+	>
+	type $mol_image__hint_gd_web_bar_link_2 = $mol_type_enforce<
+		ReturnType< $gd_web_bar_link['title'] >
+		,
+		ReturnType< $mol_image['hint'] >
+	>
+	type $mol_view__sub_gd_web_bar_link_3 = $mol_type_enforce<
+		readonly(any)[]
+		,
+		ReturnType< $mol_view['sub'] >
+	>
+	export class $gd_web_bar_link extends $mol_link {
+		icon( ): string
+		Icon( ): $mol_image
+		Title( ): $mol_view
+		target( ): string
+		uri_toggle( ): ReturnType< $gd_web_bar_link['uri'] >
+		sub( ): readonly(any)[]
+	}
+	
+}
+
+//# sourceMappingURL=link.view.tree.d.ts.map
+declare namespace $.$$ {
+    class $gd_web_bar_link extends $.$gd_web_bar_link {
+        uri_toggle(): string;
+        current(): boolean;
+    }
+}
+
+declare namespace $ {
+    class $mol_state_time extends $mol_object {
+        static task(precision: number, reset?: null): $mol_after_timeout | $mol_after_frame;
+        static now(precision: number): number;
+    }
+}
+
+declare namespace $ {
+
+	export class $mol_svg extends $mol_view {
+		dom_name( ): string
+		dom_name_space( ): string
+		font_size( ): number
+		font_family( ): string
+		style_size( ): Record<string, any>
+	}
+	
+}
+
+//# sourceMappingURL=svg.view.tree.d.ts.map
+declare namespace $.$$ {
+    class $mol_svg extends $.$mol_svg {
+        computed_style(): Record<string, any>;
+        font_size(): number;
+        font_family(): any;
+    }
+}
+
+declare namespace $ {
+}
+
+declare namespace $ {
+
+	export class $mol_svg_root extends $mol_svg {
+		view_box( ): string
+		aspect( ): string
+		dom_name( ): string
+		attr( ): ({ 
+			'viewBox': ReturnType< $mol_svg_root['view_box'] >,
+			'preserveAspectRatio': ReturnType< $mol_svg_root['aspect'] >,
+		})  & ReturnType< $mol_svg['attr'] >
+	}
+	
+}
+
+//# sourceMappingURL=root.view.tree.d.ts.map
+declare namespace $ {
+
+	export class $mol_svg_path extends $mol_svg {
+		geometry( ): string
+		dom_name( ): string
+		attr( ): ({ 
+			'd': ReturnType< $mol_svg_path['geometry'] >,
+		})  & ReturnType< $mol_svg['attr'] >
+	}
+	
+}
+
+//# sourceMappingURL=path.view.tree.d.ts.map
+declare namespace $ {
+}
+
+declare namespace $ {
+
+	type $mol_svg_path__geometry_mol_icon_1 = $mol_type_enforce<
+		ReturnType< $mol_icon['path'] >
+		,
+		ReturnType< $mol_svg_path['geometry'] >
+	>
+	export class $mol_icon extends $mol_svg_root {
+		path( ): string
+		Path( ): $mol_svg_path
+		view_box( ): string
+		minimal_width( ): number
+		minimal_height( ): number
+		sub( ): readonly(any)[]
+	}
+	
+}
+
+//# sourceMappingURL=icon.view.tree.d.ts.map
+declare namespace $ {
+
+	export class $mol_icon_script extends $mol_icon {
+		path( ): string
+	}
+	
+}
+
+//# sourceMappingURL=script.view.tree.d.ts.map
+declare namespace $ {
+
+	export class $mol_icon_script_text extends $mol_icon {
+		path( ): string
+	}
+	
+}
+
+//# sourceMappingURL=text.view.tree.d.ts.map
+declare namespace $ {
+
+	export class $mol_link_source extends $mol_link {
+		Icon( ): $mol_icon_script_text
+		hint( ): string
+		sub( ): readonly(any)[]
+	}
+	
+}
+
+//# sourceMappingURL=source.view.tree.d.ts.map
+declare namespace $ {
     function $mol_offline(): void;
 }
 
@@ -1746,6 +1892,11 @@ declare namespace $ {
 		,
 		ReturnType< $gd_web_bar_link['icon'] >
 	>
+	type $mol_link_source__uri_gd_web_bar_22 = $mol_type_enforce<
+		string
+		,
+		ReturnType< $mol_link_source['uri'] >
+	>
 	export class $gd_web_bar extends $mol_page {
 		Theme( ): $mol_theme_auto
 		title( ): string
@@ -1757,44 +1908,16 @@ declare namespace $ {
 		Balls( ): $gd_web_bar_link
 		IQ( ): $gd_web_bar_link
 		apps( ): readonly(any)[]
+		Sources( ): $mol_link_source
 		plugins( ): readonly(any)[]
 		head( ): readonly(any)[]
 		body( ): ReturnType< $gd_web_bar['apps'] >
-	}
-	
-	type $mol_image__uri_gd_web_bar_link_1 = $mol_type_enforce<
-		ReturnType< $gd_web_bar_link['icon'] >
-		,
-		ReturnType< $mol_image['uri'] >
-	>
-	type $mol_image__hint_gd_web_bar_link_2 = $mol_type_enforce<
-		ReturnType< $gd_web_bar_link['title'] >
-		,
-		ReturnType< $mol_image['hint'] >
-	>
-	type $mol_view__sub_gd_web_bar_link_3 = $mol_type_enforce<
-		readonly(any)[]
-		,
-		ReturnType< $mol_view['sub'] >
-	>
-	export class $gd_web_bar_link extends $mol_link {
-		icon( ): string
-		Icon( ): $mol_image
-		Title( ): $mol_view
-		target( ): string
-		uri_toggle( ): ReturnType< $gd_web_bar_link['uri'] >
-		sub( ): readonly(any)[]
+		foot( ): readonly(any)[]
 	}
 	
 }
 
 //# sourceMappingURL=bar.view.tree.d.ts.map
-declare namespace $.$$ {
-    class $gd_web_bar_link extends $.$gd_web_bar_link {
-        current(): boolean;
-    }
-}
-
 declare namespace $.$$ {
 }
 

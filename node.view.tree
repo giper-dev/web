@@ -76,6 +76,53 @@ $mol_image $mol_view
 	minimal_width 16
 	minimal_height 16
 
+$gd_web_bar_link $mol_link
+	target \_parent
+	uri_toggle <= uri
+	sub /
+		<= Icon $mol_image
+			uri <= icon \
+			hint <= title
+		<= Title $mol_view sub / <= title
+
+$mol_svg $mol_view
+	dom_name \svg
+	dom_name_space \http://www.w3.org/2000/svg
+	font_size 16
+	font_family \
+	style_size *
+
+$mol_svg_root $mol_svg
+	dom_name \svg
+	attr *
+		^
+		viewBox <= view_box \0 0 100 100
+		preserveAspectRatio <= aspect \xMidYMid
+
+$mol_svg_path $mol_svg
+	dom_name \path
+	attr *
+		^
+		d <= geometry \
+
+
+$mol_icon $mol_svg_root
+	view_box \0 0 24 24
+	minimal_width 16
+	minimal_height 16
+	sub /
+		<= Path $mol_svg_path
+			geometry <= path \
+
+$mol_icon_script $mol_icon path \M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H5L14.2,18C14.6,19.2 15.7,20 17,20H17.8M19,2H8C6.3,2 5,3.3 5,5V16H16V17C16,17.6 16.4,18 17,18H18V5C18,4.4 18.4,4 19,4C19.6,4 20,4.4 20,5V6H22V5C22,3.3 20.7,2 19,2Z
+
+$mol_icon_script_text $mol_icon path \M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H5L14.2,18C14.6,19.2 15.7,20 17,20H17.8M19,2C20.7,2 22,3.3 22,5V6H20V5C20,4.4 19.6,4 19,4C18.4,4 18,4.4 18,5V18H17C16.4,18 16,17.6 16,17V16H5V5C5,3.3 6.3,2 8,2H19M8,6V8H15V6H8M8,10V12H14V10H8Z
+
+$mol_link_source $mol_link
+	hint @ \Source code
+	sub /
+		<= Icon $mol_icon_script_text
+
 $gd_web_bar $mol_page
 	plugins /
 		<= Theme $mol_theme_auto
@@ -92,7 +139,7 @@ $gd_web_bar $mol_page
 			icon \gd/search/logo/logo.svg
 		<= Bot $gd_web_bar_link
 			title @ \Bot
-			uri \https://bot.giper.dev/
+			uri \https://bot.giper.dev/#!prompt={query}
 			icon \gd/bot/logo/logo.svg
 		<= Lingua $gd_web_bar_link
 			title @ \Lingua
@@ -110,12 +157,7 @@ $gd_web_bar $mol_page
 			title @ \IQ
 			uri \https://iq.giper.dev/
 			icon \gd/iq/logo/logo.svg
+	foot /
+		<= Sources $mol_link_source
+			uri \https://github.com/giper-dev/web
 
-$gd_web_bar_link $mol_link
-	target \_parent
-	uri_toggle <= uri
-	sub /
-		<= Icon $mol_image
-			uri <= icon \
-			hint <= title
-		<= Title $mol_view sub / <= title

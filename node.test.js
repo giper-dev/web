@@ -1075,10 +1075,12 @@ var $;
                         result = wrappers.get(result);
                     }
                     else {
-                        wrappers.set(result, result = Object.assign(result.finally(() => {
+                        const put = (v) => {
                             if (this.cache === result)
                                 this.absorb();
-                        }), { destructor: result.destructor || (() => { }) }));
+                            return v;
+                        };
+                        wrappers.set(result, result = Object.assign(result.then(put, put), { destructor: result.destructor || (() => { }) }));
                         const error = new Error(`Promise in ${this}`);
                         Object.defineProperty(result, 'stack', { get: () => error.stack });
                     }
@@ -2518,6 +2520,12 @@ var $;
             $mol_wire_atom.watching.add(this);
         }
         resync(args) {
+            for (let cursor = this.pub_from; cursor < this.sub_from; cursor += 2) {
+                const pub = this.data[cursor];
+                if (pub && pub instanceof $mol_wire_task) {
+                    pub.destructor();
+                }
+            }
             return this.put(this.task.call(this.host, ...args));
         }
         once() {
@@ -5629,6 +5637,273 @@ var $;
 })($ || ($ = {}));
 
 ;
+	($.$gd_web_bar_link) = class $gd_web_bar_link extends ($.$mol_link) {
+		icon(){
+			return "";
+		}
+		Icon(){
+			const obj = new this.$.$mol_image();
+			(obj.uri) = () => ((this.icon()));
+			(obj.hint) = () => ((this.title()));
+			return obj;
+		}
+		Title(){
+			const obj = new this.$.$mol_view();
+			(obj.sub) = () => ([(this.title())]);
+			return obj;
+		}
+		target(){
+			return "_parent";
+		}
+		uri_toggle(){
+			return (this.uri());
+		}
+		sub(){
+			return [(this.Icon()), (this.Title())];
+		}
+	};
+	($mol_mem(($.$gd_web_bar_link.prototype), "Icon"));
+	($mol_mem(($.$gd_web_bar_link.prototype), "Title"));
+
+
+;
+"use strict";
+
+;
+"use strict";
+var $;
+(function ($) {
+    var $$;
+    (function ($$) {
+        class $gd_web_bar_link extends $.$gd_web_bar_link {
+            uri_toggle() {
+                return this.uri().replace('{query}', encodeURIComponent(this.$.$mol_state_arg.value('query') ?? ''));
+            }
+            current() {
+                const omit = /^https?:\/\/|\/?\??(#.*)?$/g;
+                const current = (this.$.$mol_state_arg.value('current') ?? '').replace(omit, '')
+                    || this.$.$mol_state_arg.href().replace(omit, '');
+                const uri = this.uri().replace(omit, '');
+                return uri === current;
+            }
+        }
+        __decorate([
+            $mol_mem
+        ], $gd_web_bar_link.prototype, "current", null);
+        $$.$gd_web_bar_link = $gd_web_bar_link;
+    })($$ = $.$$ || ($.$$ = {}));
+})($ || ($ = {}));
+
+;
+	($.$mol_svg) = class $mol_svg extends ($.$mol_view) {
+		dom_name(){
+			return "svg";
+		}
+		dom_name_space(){
+			return "http://www.w3.org/2000/svg";
+		}
+		font_size(){
+			return 16;
+		}
+		font_family(){
+			return "";
+		}
+		style_size(){
+			return {};
+		}
+	};
+
+
+;
+"use strict";
+var $;
+(function ($) {
+    class $mol_state_time extends $mol_object {
+        static task(precision, reset) {
+            if (precision) {
+                return new $mol_after_timeout(precision, () => this.task(precision, null));
+            }
+            else {
+                return new $mol_after_frame(() => this.task(precision, null));
+            }
+        }
+        static now(precision) {
+            this.task(precision);
+            return Date.now();
+        }
+    }
+    __decorate([
+        $mol_mem_key
+    ], $mol_state_time, "task", null);
+    __decorate([
+        $mol_mem_key
+    ], $mol_state_time, "now", null);
+    $.$mol_state_time = $mol_state_time;
+})($ || ($ = {}));
+
+;
+"use strict";
+
+;
+"use strict";
+var $;
+(function ($) {
+    var $$;
+    (function ($$) {
+        class $mol_svg extends $.$mol_svg {
+            computed_style() {
+                const win = this.$.$mol_dom_context;
+                const style = win.getComputedStyle(this.dom_node());
+                if (!style['font-size'])
+                    $mol_state_time.now(0);
+                return style;
+            }
+            font_size() {
+                return parseInt(this.computed_style()['font-size']) || 16;
+            }
+            font_family() {
+                return this.computed_style()['font-family'];
+            }
+        }
+        __decorate([
+            $mol_mem
+        ], $mol_svg.prototype, "computed_style", null);
+        __decorate([
+            $mol_mem
+        ], $mol_svg.prototype, "font_size", null);
+        __decorate([
+            $mol_mem
+        ], $mol_svg.prototype, "font_family", null);
+        $$.$mol_svg = $mol_svg;
+    })($$ = $.$$ || ($.$$ = {}));
+})($ || ($ = {}));
+
+;
+	($.$mol_svg_root) = class $mol_svg_root extends ($.$mol_svg) {
+		view_box(){
+			return "0 0 100 100";
+		}
+		aspect(){
+			return "xMidYMid";
+		}
+		dom_name(){
+			return "svg";
+		}
+		attr(){
+			return {
+				...(super.attr()), 
+				"viewBox": (this.view_box()), 
+				"preserveAspectRatio": (this.aspect())
+			};
+		}
+	};
+
+
+;
+"use strict";
+var $;
+(function ($) {
+    $mol_style_attach("mol/svg/root/root.view.css", "[mol_svg_root] {\n\toverflow: hidden;\n}\n");
+})($ || ($ = {}));
+
+;
+"use strict";
+
+;
+	($.$mol_svg_path) = class $mol_svg_path extends ($.$mol_svg) {
+		geometry(){
+			return "";
+		}
+		dom_name(){
+			return "path";
+		}
+		attr(){
+			return {...(super.attr()), "d": (this.geometry())};
+		}
+	};
+
+
+;
+"use strict";
+
+;
+	($.$mol_icon) = class $mol_icon extends ($.$mol_svg_root) {
+		path(){
+			return "";
+		}
+		Path(){
+			const obj = new this.$.$mol_svg_path();
+			(obj.geometry) = () => ((this.path()));
+			return obj;
+		}
+		view_box(){
+			return "0 0 24 24";
+		}
+		minimal_width(){
+			return 16;
+		}
+		minimal_height(){
+			return 16;
+		}
+		sub(){
+			return [(this.Path())];
+		}
+	};
+	($mol_mem(($.$mol_icon.prototype), "Path"));
+
+
+;
+"use strict";
+var $;
+(function ($) {
+    $mol_style_attach("mol/icon/icon.view.css", "[mol_icon] {\n\tfill: currentColor;\n\tstroke: none;\n\twidth: 1em;\n\theight: 1.5em;\n\tflex: 0 0 auto;\n\tvertical-align: top;\n\tdisplay: inline-block;\n\tfilter: drop-shadow(0px 1px 1px var(--mol_theme_back));\n\ttransform-origin: center;\n}\n\n[mol_icon_path] {\n\ttransform-origin: center;\n}\n");
+})($ || ($ = {}));
+
+;
+"use strict";
+
+;
+	($.$mol_icon_script) = class $mol_icon_script extends ($.$mol_icon) {
+		path(){
+			return "M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H5L14.2,18C14.6,19.2 15.7,20 17,20H17.8M19,2H8C6.3,2 5,3.3 5,5V16H16V17C16,17.6 16.4,18 17,18H18V5C18,4.4 18.4,4 19,4C19.6,4 20,4.4 20,5V6H22V5C22,3.3 20.7,2 19,2Z";
+		}
+	};
+
+
+;
+"use strict";
+
+;
+	($.$mol_icon_script_text) = class $mol_icon_script_text extends ($.$mol_icon) {
+		path(){
+			return "M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H5L14.2,18C14.6,19.2 15.7,20 17,20H17.8M19,2C20.7,2 22,3.3 22,5V6H20V5C20,4.4 19.6,4 19,4C18.4,4 18,4.4 18,5V18H17C16.4,18 16,17.6 16,17V16H5V5C5,3.3 6.3,2 8,2H19M8,6V8H15V6H8M8,10V12H14V10H8Z";
+		}
+	};
+
+
+;
+"use strict";
+
+;
+	($.$mol_link_source) = class $mol_link_source extends ($.$mol_link) {
+		Icon(){
+			const obj = new this.$.$mol_icon_script_text();
+			return obj;
+		}
+		hint(){
+			return (this.$.$mol_locale.text("$mol_link_source_hint"));
+		}
+		sub(){
+			return [(this.Icon())];
+		}
+	};
+	($mol_mem(($.$mol_link_source.prototype), "Icon"));
+
+
+;
+"use strict";
+
+;
 	($.$gd_web_bar) = class $gd_web_bar extends ($.$mol_page) {
 		Theme(){
 			const obj = new this.$.$mol_theme_auto();
@@ -5654,7 +5929,7 @@ var $;
 		Bot(){
 			const obj = new this.$.$gd_web_bar_link();
 			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Bot_title")));
-			(obj.uri) = () => ("https://bot.giper.dev/");
+			(obj.uri) = () => ("https://bot.giper.dev/#!prompt={query}");
 			(obj.icon) = () => ("gd/bot/logo/logo.svg");
 			return obj;
 		}
@@ -5696,6 +5971,11 @@ var $;
 				(this.IQ())
 			];
 		}
+		Sources(){
+			const obj = new this.$.$mol_link_source();
+			(obj.uri) = () => ("https://github.com/giper-dev/web");
+			return obj;
+		}
 		plugins(){
 			return [(this.Theme())];
 		}
@@ -5704,6 +5984,9 @@ var $;
 		}
 		body(){
 			return (this.apps());
+		}
+		foot(){
+			return [(this.Sources())];
 		}
 	};
 	($mol_mem(($.$gd_web_bar.prototype), "Theme"));
@@ -5714,33 +5997,7 @@ var $;
 	($mol_mem(($.$gd_web_bar.prototype), "Player"));
 	($mol_mem(($.$gd_web_bar.prototype), "Balls"));
 	($mol_mem(($.$gd_web_bar.prototype), "IQ"));
-	($.$gd_web_bar_link) = class $gd_web_bar_link extends ($.$mol_link) {
-		icon(){
-			return "";
-		}
-		Icon(){
-			const obj = new this.$.$mol_image();
-			(obj.uri) = () => ((this.icon()));
-			(obj.hint) = () => ((this.title()));
-			return obj;
-		}
-		Title(){
-			const obj = new this.$.$mol_view();
-			(obj.sub) = () => ([(this.title())]);
-			return obj;
-		}
-		target(){
-			return "_parent";
-		}
-		uri_toggle(){
-			return (this.uri());
-		}
-		sub(){
-			return [(this.Icon()), (this.Title())];
-		}
-	};
-	($mol_mem(($.$gd_web_bar_link.prototype), "Icon"));
-	($mol_mem(($.$gd_web_bar_link.prototype), "Title"));
+	($mol_mem(($.$gd_web_bar.prototype), "Sources"));
 
 
 ;
@@ -5765,28 +6022,6 @@ var $;
 
 ;
 "use strict";
-
-;
-"use strict";
-var $;
-(function ($) {
-    var $$;
-    (function ($$) {
-        class $gd_web_bar_link extends $.$gd_web_bar_link {
-            current() {
-                const omit = /^https?:\/\/|\/?\??(#.*)?$/g;
-                const current = (this.$.$mol_state_arg.value('current') ?? '').replace(omit, '')
-                    || this.$.$mol_state_arg.href().replace(omit, '');
-                const uri = this.uri().replace(omit, '');
-                return uri === current;
-            }
-        }
-        __decorate([
-            $mol_mem
-        ], $gd_web_bar_link.prototype, "current", null);
-        $$.$gd_web_bar_link = $gd_web_bar_link;
-    })($$ = $.$$ || ($.$$ = {}));
-})($ || ($ = {}));
 
 ;
 "use strict";
