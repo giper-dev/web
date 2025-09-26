@@ -18,11 +18,11 @@ $gd_web_bar $mol_page
 			icon \gd/bot/logo/logo.svg
 		<= Lingua $gd_web_bar_link
 			title @ \Lingua
-			uri \https://lingua.giper.dev/
+			uri \https://lingua.giper.dev/#!native_text={query}
 			icon \gd/lingua/logo/logo.svg
 		<= Player $gd_web_bar_link
 			title @ \Player
-			uri \https://player.giper.dev/
+			uri \https://player.giper.dev/#!search={query}
 			icon \gd/player/logo/logo.svg
 		<= Balls $gd_web_bar_link
 			title @ \Balls
