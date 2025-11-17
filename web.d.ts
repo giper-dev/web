@@ -1699,27 +1699,27 @@ declare namespace $ {
 //# sourceMappingURL=image.view.tree.d.ts.map
 declare namespace $ {
 
-	type $mol_image__uri_gd_web_bar_link_1 = $mol_type_enforce<
-		ReturnType< $gd_web_bar_link['icon'] >
+	type $mol_image__uri_giper_web_bar_link_1 = $mol_type_enforce<
+		ReturnType< $giper_web_bar_link['icon'] >
 		,
 		ReturnType< $mol_image['uri'] >
 	>
-	type $mol_image__hint_gd_web_bar_link_2 = $mol_type_enforce<
-		ReturnType< $gd_web_bar_link['title'] >
+	type $mol_image__hint_giper_web_bar_link_2 = $mol_type_enforce<
+		ReturnType< $giper_web_bar_link['title'] >
 		,
 		ReturnType< $mol_image['hint'] >
 	>
-	type $mol_view__sub_gd_web_bar_link_3 = $mol_type_enforce<
+	type $mol_view__sub_giper_web_bar_link_3 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	export class $gd_web_bar_link extends $mol_link {
+	export class $giper_web_bar_link extends $mol_link {
 		icon( ): string
 		Icon( ): $mol_image
 		Title( ): $mol_view
 		target( ): string
-		uri_toggle( ): ReturnType< $gd_web_bar_link['uri'] >
+		uri_toggle( ): ReturnType< $giper_web_bar_link['uri'] >
 		sub( ): readonly(any)[]
 	}
 	
@@ -1727,7 +1727,7 @@ declare namespace $ {
 
 //# sourceMappingURL=link.view.tree.d.ts.map
 declare namespace $.$$ {
-    class $gd_web_bar_link extends $.$gd_web_bar_link {
+    class $giper_web_bar_link extends $.$giper_web_bar_link {
         uri_toggle(): string;
         current(): boolean;
     }
@@ -1856,131 +1856,131 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $gd_web_bar_link__title_gd_web_bar_1 = $mol_type_enforce<
-		ReturnType< $gd_web_bar['title'] >
+	type $giper_web_bar_link__title_giper_web_bar_1 = $mol_type_enforce<
+		ReturnType< $giper_web_bar['title'] >
 		,
-		ReturnType< $gd_web_bar_link['title'] >
+		ReturnType< $giper_web_bar_link['title'] >
 	>
-	type $gd_web_bar_link__uri_gd_web_bar_2 = $mol_type_enforce<
+	type $giper_web_bar_link__uri_giper_web_bar_2 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['uri'] >
+		ReturnType< $giper_web_bar_link['uri'] >
 	>
-	type $gd_web_bar_link__icon_gd_web_bar_3 = $mol_type_enforce<
+	type $giper_web_bar_link__icon_giper_web_bar_3 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['icon'] >
+		ReturnType< $giper_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__title_gd_web_bar_4 = $mol_type_enforce<
+	type $giper_web_bar_link__title_giper_web_bar_4 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['title'] >
+		ReturnType< $giper_web_bar_link['title'] >
 	>
-	type $gd_web_bar_link__uri_gd_web_bar_5 = $mol_type_enforce<
+	type $giper_web_bar_link__uri_giper_web_bar_5 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['uri'] >
+		ReturnType< $giper_web_bar_link['uri'] >
 	>
-	type $gd_web_bar_link__icon_gd_web_bar_6 = $mol_type_enforce<
+	type $giper_web_bar_link__icon_giper_web_bar_6 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['icon'] >
+		ReturnType< $giper_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__title_gd_web_bar_7 = $mol_type_enforce<
+	type $giper_web_bar_link__title_giper_web_bar_7 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['title'] >
+		ReturnType< $giper_web_bar_link['title'] >
 	>
-	type $gd_web_bar_link__uri_gd_web_bar_8 = $mol_type_enforce<
+	type $giper_web_bar_link__uri_giper_web_bar_8 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['uri'] >
+		ReturnType< $giper_web_bar_link['uri'] >
 	>
-	type $gd_web_bar_link__icon_gd_web_bar_9 = $mol_type_enforce<
+	type $giper_web_bar_link__icon_giper_web_bar_9 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['icon'] >
+		ReturnType< $giper_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__title_gd_web_bar_10 = $mol_type_enforce<
+	type $giper_web_bar_link__title_giper_web_bar_10 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['title'] >
+		ReturnType< $giper_web_bar_link['title'] >
 	>
-	type $gd_web_bar_link__uri_gd_web_bar_11 = $mol_type_enforce<
+	type $giper_web_bar_link__uri_giper_web_bar_11 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['uri'] >
+		ReturnType< $giper_web_bar_link['uri'] >
 	>
-	type $gd_web_bar_link__icon_gd_web_bar_12 = $mol_type_enforce<
+	type $giper_web_bar_link__icon_giper_web_bar_12 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['icon'] >
+		ReturnType< $giper_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__title_gd_web_bar_13 = $mol_type_enforce<
+	type $giper_web_bar_link__title_giper_web_bar_13 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['title'] >
+		ReturnType< $giper_web_bar_link['title'] >
 	>
-	type $gd_web_bar_link__uri_gd_web_bar_14 = $mol_type_enforce<
+	type $giper_web_bar_link__uri_giper_web_bar_14 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['uri'] >
+		ReturnType< $giper_web_bar_link['uri'] >
 	>
-	type $gd_web_bar_link__icon_gd_web_bar_15 = $mol_type_enforce<
+	type $giper_web_bar_link__icon_giper_web_bar_15 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['icon'] >
+		ReturnType< $giper_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__title_gd_web_bar_16 = $mol_type_enforce<
+	type $giper_web_bar_link__title_giper_web_bar_16 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['title'] >
+		ReturnType< $giper_web_bar_link['title'] >
 	>
-	type $gd_web_bar_link__uri_gd_web_bar_17 = $mol_type_enforce<
+	type $giper_web_bar_link__uri_giper_web_bar_17 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['uri'] >
+		ReturnType< $giper_web_bar_link['uri'] >
 	>
-	type $gd_web_bar_link__icon_gd_web_bar_18 = $mol_type_enforce<
+	type $giper_web_bar_link__icon_giper_web_bar_18 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['icon'] >
+		ReturnType< $giper_web_bar_link['icon'] >
 	>
-	type $gd_web_bar_link__title_gd_web_bar_19 = $mol_type_enforce<
+	type $giper_web_bar_link__title_giper_web_bar_19 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['title'] >
+		ReturnType< $giper_web_bar_link['title'] >
 	>
-	type $gd_web_bar_link__uri_gd_web_bar_20 = $mol_type_enforce<
+	type $giper_web_bar_link__uri_giper_web_bar_20 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['uri'] >
+		ReturnType< $giper_web_bar_link['uri'] >
 	>
-	type $gd_web_bar_link__icon_gd_web_bar_21 = $mol_type_enforce<
+	type $giper_web_bar_link__icon_giper_web_bar_21 = $mol_type_enforce<
 		string
 		,
-		ReturnType< $gd_web_bar_link['icon'] >
+		ReturnType< $giper_web_bar_link['icon'] >
 	>
-	type $mol_link_source__uri_gd_web_bar_22 = $mol_type_enforce<
+	type $mol_link_source__uri_giper_web_bar_22 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link_source['uri'] >
 	>
-	export class $gd_web_bar extends $mol_page {
+	export class $giper_web_bar extends $mol_page {
 		Theme( ): $mol_theme_auto
 		title( ): string
-		Giper( ): $gd_web_bar_link
-		Search( ): $gd_web_bar_link
-		Bot( ): $gd_web_bar_link
-		Lingua( ): $gd_web_bar_link
-		Player( ): $gd_web_bar_link
-		Balls( ): $gd_web_bar_link
-		IQ( ): $gd_web_bar_link
+		Giper( ): $giper_web_bar_link
+		Search( ): $giper_web_bar_link
+		Bot( ): $giper_web_bar_link
+		Lingua( ): $giper_web_bar_link
+		Player( ): $giper_web_bar_link
+		Balls( ): $giper_web_bar_link
+		IQ( ): $giper_web_bar_link
 		apps( ): readonly(any)[]
 		Sources( ): $mol_link_source
 		plugins( ): readonly(any)[]
 		head( ): readonly(any)[]
-		body( ): ReturnType< $gd_web_bar['apps'] >
+		body( ): ReturnType< $giper_web_bar['apps'] >
 		foot( ): readonly(any)[]
 	}
 	

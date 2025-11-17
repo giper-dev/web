@@ -1,5 +1,5 @@
 {
-  "name": "gd_web_bar",
+  "name": "giper_web_bar",
   "version": "0.0.1",
   "exports": {
     "node": {
@@ -15,9 +15,9 @@
   "browser": "./web.js",
   "types": "./web.d.ts",
   "keywords": [
-    "$gd_web_bar",
-    "$gd_web",
-    "$gd",
+    "$giper_web_bar",
+    "$giper_web",
+    "$giper",
     "$mol_page",
     "$mol",
     "$mol_view_view",
@@ -150,7 +150,7 @@
     "$mol_type_enforce",
     "$mol_theme_auto",
     "$mol_locale",
-    "$gd_web_bar_link",
+    "$giper_web_bar_link",
     "$mol_link",
     "$mol_image",
     "$mol_link_source",

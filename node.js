@@ -5700,7 +5700,7 @@ var $;
 })($ || ($ = {}));
 
 ;
-	($.$gd_web_bar_link) = class $gd_web_bar_link extends ($.$mol_link) {
+	($.$giper_web_bar_link) = class $giper_web_bar_link extends ($.$mol_link) {
 		icon(){
 			return "";
 		}
@@ -5725,8 +5725,8 @@ var $;
 			return [(this.Icon()), (this.Title())];
 		}
 	};
-	($mol_mem(($.$gd_web_bar_link.prototype), "Icon"));
-	($mol_mem(($.$gd_web_bar_link.prototype), "Title"));
+	($mol_mem(($.$giper_web_bar_link.prototype), "Icon"));
+	($mol_mem(($.$giper_web_bar_link.prototype), "Title"));
 
 
 ;
@@ -5738,7 +5738,7 @@ var $;
 (function ($) {
     var $$;
     (function ($$) {
-        class $gd_web_bar_link extends $.$gd_web_bar_link {
+        class $giper_web_bar_link extends $.$giper_web_bar_link {
             uri_toggle() {
                 return this.uri().replace('{query}', encodeURIComponent(this.$.$mol_state_arg.value('query') ?? ''));
             }
@@ -5752,8 +5752,8 @@ var $;
         }
         __decorate([
             $mol_mem
-        ], $gd_web_bar_link.prototype, "current", null);
-        $$.$gd_web_bar_link = $gd_web_bar_link;
+        ], $giper_web_bar_link.prototype, "current", null);
+        $$.$giper_web_bar_link = $giper_web_bar_link;
     })($$ = $.$$ || ($.$$ = {}));
 })($ || ($ = {}));
 
@@ -5967,61 +5967,61 @@ var $;
 "use strict";
 
 ;
-	($.$gd_web_bar) = class $gd_web_bar extends ($.$mol_page) {
+	($.$giper_web_bar) = class $giper_web_bar extends ($.$mol_page) {
 		Theme(){
 			const obj = new this.$.$mol_theme_auto();
 			return obj;
 		}
 		title(){
-			return (this.$.$mol_locale.text("$gd_web_bar_title"));
+			return (this.$.$mol_locale.text("$giper_web_bar_title"));
 		}
 		Giper(){
-			const obj = new this.$.$gd_web_bar_link();
+			const obj = new this.$.$giper_web_bar_link();
 			(obj.title) = () => ((this.title()));
 			(obj.uri) = () => ("https://web.giper.dev/");
-			(obj.icon) = () => ("gd/web/logo/logo.svg");
+			(obj.icon) = () => ("giper/web/logo/logo.svg");
 			return obj;
 		}
 		Search(){
-			const obj = new this.$.$gd_web_bar_link();
-			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Search_title")));
+			const obj = new this.$.$giper_web_bar_link();
+			(obj.title) = () => ((this.$.$mol_locale.text("$giper_web_bar_Search_title")));
 			(obj.uri) = () => ("https://search.giper.dev/");
-			(obj.icon) = () => ("gd/search/logo/logo.svg");
+			(obj.icon) = () => ("giper/search/logo/logo.svg");
 			return obj;
 		}
 		Bot(){
-			const obj = new this.$.$gd_web_bar_link();
-			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Bot_title")));
+			const obj = new this.$.$giper_web_bar_link();
+			(obj.title) = () => ((this.$.$mol_locale.text("$giper_web_bar_Bot_title")));
 			(obj.uri) = () => ("https://bot.giper.dev/#!prompt={query}");
-			(obj.icon) = () => ("gd/bot/logo/logo.svg");
+			(obj.icon) = () => ("giper/bot/logo/logo.svg");
 			return obj;
 		}
 		Lingua(){
-			const obj = new this.$.$gd_web_bar_link();
-			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Lingua_title")));
+			const obj = new this.$.$giper_web_bar_link();
+			(obj.title) = () => ((this.$.$mol_locale.text("$giper_web_bar_Lingua_title")));
 			(obj.uri) = () => ("https://lingua.giper.dev/#!native_text={query}");
-			(obj.icon) = () => ("gd/lingua/logo/logo.svg");
+			(obj.icon) = () => ("giper/lingua/logo/logo.svg");
 			return obj;
 		}
 		Player(){
-			const obj = new this.$.$gd_web_bar_link();
-			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Player_title")));
+			const obj = new this.$.$giper_web_bar_link();
+			(obj.title) = () => ((this.$.$mol_locale.text("$giper_web_bar_Player_title")));
 			(obj.uri) = () => ("https://player.giper.dev/#!search={query}");
-			(obj.icon) = () => ("gd/player/logo/logo.svg");
+			(obj.icon) = () => ("giper/player/logo/logo.svg");
 			return obj;
 		}
 		Balls(){
-			const obj = new this.$.$gd_web_bar_link();
-			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_Balls_title")));
+			const obj = new this.$.$giper_web_bar_link();
+			(obj.title) = () => ((this.$.$mol_locale.text("$giper_web_bar_Balls_title")));
 			(obj.uri) = () => ("https://balls.giper.dev/");
-			(obj.icon) = () => ("gd/balls/logo/logo.svg");
+			(obj.icon) = () => ("giper/balls/logo/logo.svg");
 			return obj;
 		}
 		IQ(){
-			const obj = new this.$.$gd_web_bar_link();
-			(obj.title) = () => ((this.$.$mol_locale.text("$gd_web_bar_IQ_title")));
+			const obj = new this.$.$giper_web_bar_link();
+			(obj.title) = () => ((this.$.$mol_locale.text("$giper_web_bar_IQ_title")));
 			(obj.uri) = () => ("https://iq.giper.dev/");
-			(obj.icon) = () => ("gd/iq/logo/logo.svg");
+			(obj.icon) = () => ("giper/iq/logo/logo.svg");
 			return obj;
 		}
 		apps(){
@@ -6052,15 +6052,15 @@ var $;
 			return [(this.Sources())];
 		}
 	};
-	($mol_mem(($.$gd_web_bar.prototype), "Theme"));
-	($mol_mem(($.$gd_web_bar.prototype), "Giper"));
-	($mol_mem(($.$gd_web_bar.prototype), "Search"));
-	($mol_mem(($.$gd_web_bar.prototype), "Bot"));
-	($mol_mem(($.$gd_web_bar.prototype), "Lingua"));
-	($mol_mem(($.$gd_web_bar.prototype), "Player"));
-	($mol_mem(($.$gd_web_bar.prototype), "Balls"));
-	($mol_mem(($.$gd_web_bar.prototype), "IQ"));
-	($mol_mem(($.$gd_web_bar.prototype), "Sources"));
+	($mol_mem(($.$giper_web_bar.prototype), "Theme"));
+	($mol_mem(($.$giper_web_bar.prototype), "Giper"));
+	($mol_mem(($.$giper_web_bar.prototype), "Search"));
+	($mol_mem(($.$giper_web_bar.prototype), "Bot"));
+	($mol_mem(($.$giper_web_bar.prototype), "Lingua"));
+	($mol_mem(($.$giper_web_bar.prototype), "Player"));
+	($mol_mem(($.$giper_web_bar.prototype), "Balls"));
+	($mol_mem(($.$giper_web_bar.prototype), "IQ"));
+	($mol_mem(($.$giper_web_bar.prototype), "Sources"));
 
 
 ;
@@ -6092,7 +6092,7 @@ var $;
 (function ($) {
     var $$;
     (function ($$) {
-        $mol_style_define($gd_web_bar, {
+        $mol_style_define($giper_web_bar, {
             width: 'fit-content',
             overflow: 'hidden',
             background: {
@@ -6110,7 +6110,7 @@ var $;
                 }
             },
         });
-        $mol_style_define($gd_web_bar_link, {
+        $mol_style_define($giper_web_bar_link, {
             padding: 0,
             gap: 0,
             Icon: {

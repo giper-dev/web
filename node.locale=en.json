@@ -1,10 +1,10 @@
 {
-	"$gd_web_bar_Balls_title": "Balls",
-	"$gd_web_bar_Bot_title": "Bot",
-	"$gd_web_bar_IQ_title": "IQ",
-	"$gd_web_bar_Lingua_title": "Lingua",
-	"$gd_web_bar_Player_title": "Player",
-	"$gd_web_bar_Search_title": "Search",
-	"$gd_web_bar_title": "Giper Web",
+	"$giper_web_bar_Balls_title": "Balls",
+	"$giper_web_bar_Bot_title": "Bot",
+	"$giper_web_bar_IQ_title": "IQ",
+	"$giper_web_bar_Lingua_title": "Lingua",
+	"$giper_web_bar_Player_title": "Player",
+	"$giper_web_bar_Search_title": "Search",
+	"$giper_web_bar_title": "Giper Web",
 	"$mol_link_source_hint": "Source code"
 }
