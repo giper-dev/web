@@ -1,4 +1,4 @@
-$gd_web_bar_link $mol_link
+$giper_web_bar_link $mol_link
 	target \_parent
 	uri_toggle <= uri
 	sub /

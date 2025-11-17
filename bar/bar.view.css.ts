@@ -1,6 +1,6 @@
 namespace $.$$ {
 	
-	$mol_style_define( $gd_web_bar, {
+	$mol_style_define( $giper_web_bar, {
 		
 		width: 'fit-content',
 		overflow: 'hidden',
@@ -30,7 +30,7 @@ namespace $.$$ {
 		
 	} )
 	
-	$mol_style_define( $gd_web_bar_link, {
+	$mol_style_define( $giper_web_bar_link, {
 		
 		padding: 0,
 		

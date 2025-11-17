@@ -1,5 +1,5 @@
 namespace $.$$ {
-	export class $gd_web_frame extends $.$gd_web_frame {
+	export class $giper_web_frame extends $.$giper_web_frame {
 		
 		@ $mol_mem
 		uri() {
