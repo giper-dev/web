@@ -20,7 +20,7 @@ $giper_web_bar $mol_page
 			title @ \Lingua
 			uri \https://lingua.giper.dev/#!native_text={query}
 			icon \giper/lingua/logo/logo.svg
-		- <= Player $giper_web_bar_link
+		<= Player $giper_web_bar_link
 			title @ \Player
 			uri \https://player.giper.dev/#!search={query}
 			icon \giper/player/logo/logo.svg
