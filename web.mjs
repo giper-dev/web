@@ -5735,6 +5735,13 @@ var $;
 			(obj.icon) = () => ("giper/lingua/logo/logo.svg");
 			return obj;
 		}
+		Player(){
+			const obj = new this.$.$giper_web_bar_link();
+			(obj.title) = () => ((this.$.$mol_locale.text("$giper_web_bar_Player_title")));
+			(obj.uri) = () => ("https://player.giper.dev/#!search={query}");
+			(obj.icon) = () => ("giper/player/logo/logo.svg");
+			return obj;
+		}
 		Balls(){
 			const obj = new this.$.$giper_web_bar_link();
 			(obj.title) = () => ((this.$.$mol_locale.text("$giper_web_bar_Balls_title")));
@@ -5754,6 +5761,7 @@ var $;
 				(this.Search()), 
 				(this.Bot()), 
 				(this.Lingua()), 
+				(this.Player()), 
 				(this.Balls()), 
 				(this.IQ())
 			];
@@ -5781,6 +5789,7 @@ var $;
 	($mol_mem(($.$giper_web_bar.prototype), "Search"));
 	($mol_mem(($.$giper_web_bar.prototype), "Bot"));
 	($mol_mem(($.$giper_web_bar.prototype), "Lingua"));
+	($mol_mem(($.$giper_web_bar.prototype), "Player"));
 	($mol_mem(($.$giper_web_bar.prototype), "Balls"));
 	($mol_mem(($.$giper_web_bar.prototype), "IQ"));
 	($mol_mem(($.$giper_web_bar.prototype), "Sources"));
