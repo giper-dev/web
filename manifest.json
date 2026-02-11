@@ -1,0 +1,10 @@
+{
+	"name": "giper_web_bar",
+	"short_name": "giper_web_bar",
+	"description": "",
+	"id": "giper_web_bar",
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#000000",
+	"theme_color": "#000000"
+}
