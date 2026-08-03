@@ -12,11 +12,11 @@ $giper_web_bar $mol_page
 			title @ \Search
 			uri \https://search.giper.dev/
 			icon \giper/search/logo/logo.svg
-		<= Bot $giper_web_bar_link
+		- <= Bot $giper_web_bar_link
 			title @ \Bot
 			uri \https://bot.giper.dev/#!prompt={query}
 			icon \giper/bot/logo/logo.svg
-		<= Lingua $giper_web_bar_link
+		- <= Lingua $giper_web_bar_link
 			title @ \Lingua
 			uri \https://lingua.giper.dev/#!native_text={query}
 			icon \giper/lingua/logo/logo.svg
