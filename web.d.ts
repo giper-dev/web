@@ -2548,37 +2548,7 @@ declare namespace $ {
 		,
 		ReturnType< $giper_web_bar_link['icon'] >
 	>
-	type $giper_web_bar_link__title_giper_web_bar_16 = $mol_type_enforce<
-		string
-		,
-		ReturnType< $giper_web_bar_link['title'] >
-	>
-	type $giper_web_bar_link__uri_giper_web_bar_17 = $mol_type_enforce<
-		string
-		,
-		ReturnType< $giper_web_bar_link['uri'] >
-	>
-	type $giper_web_bar_link__icon_giper_web_bar_18 = $mol_type_enforce<
-		string
-		,
-		ReturnType< $giper_web_bar_link['icon'] >
-	>
-	type $giper_web_bar_link__title_giper_web_bar_19 = $mol_type_enforce<
-		string
-		,
-		ReturnType< $giper_web_bar_link['title'] >
-	>
-	type $giper_web_bar_link__uri_giper_web_bar_20 = $mol_type_enforce<
-		string
-		,
-		ReturnType< $giper_web_bar_link['uri'] >
-	>
-	type $giper_web_bar_link__icon_giper_web_bar_21 = $mol_type_enforce<
-		string
-		,
-		ReturnType< $giper_web_bar_link['icon'] >
-	>
-	type $mol_link_source__uri_giper_web_bar_22 = $mol_type_enforce<
+	type $mol_link_source__uri_giper_web_bar_16 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link_source['uri'] >
@@ -2588,8 +2558,6 @@ declare namespace $ {
 		title( ): string
 		Giper( ): $giper_web_bar_link
 		Search( ): $giper_web_bar_link
-		Bot( ): $giper_web_bar_link
-		Lingua( ): $giper_web_bar_link
 		Player( ): $giper_web_bar_link
 		Balls( ): $giper_web_bar_link
 		IQ( ): $giper_web_bar_link
