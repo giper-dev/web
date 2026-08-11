@@ -159,6 +159,7 @@
     "$mol_locale",
     "$giper_web_bar_link",
     "$mol_link",
+    "$mol_dom_safe",
     "$mol_image",
     "$mol_link_source",
     "$mol_icon_script_text",
